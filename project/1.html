@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+        }
+        .container{
+            width: 100vw;
+            height: 600px;
+            background: url(img/prrda2-scaled.jpg) no-repeat left top /cover;
+
+           
+
+        }
+        .footer{
+            width: 100vw;
+            height:50vh;
+            background-color: blue;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            background: url(img/трва.jpg) no-repeat left top /cover;
+        }
+        .header{
+            width: 100vw;
+            height: 100px;
+            background: url(img/новое\ небо.jpg) no-repeat left top /cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .weather{
+            font-size: 50px;
+            margin:0;
+
+        }
+        .circle{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: gold;
+            margin-top: 100px;
+            margin-left: 500px;
+            box-shadow: 10px 5px 5px 5px rgb(255, 230, 5);
+        }
+        .temperature{
+            width: 50vw;
+            height: 30vw;
+            background-color: black;
+            display: flex;
+            justify-content:center;
+            margin-left: 300px;
+            box-shadow: 1px 1px 10px 10px rgb(78, 74, 74);
+            
+
+        }
+        .papa{
+            width: 100vw;
+            height:110vh;
+            background-color: yellow;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    
+   <div class = "papa">
+        <div class="container">
+        <div class="header">
+            <p class="weather">Погода Минск</p>
+        </div>
+            <div class="circle"></div>
+
+    </div>
+    <div class = footer>
+        <div class = "temperature"></div>
+    </div>
+</div>
+
+    <script>
+ 
+      /*   let sky = document.createElement('img');
+        sky.style.src= "img/небо.jpg";
+        sky.style.width = '100vw';
+        sky.style.height = '100px';
+
+        let header = document.querySelector('.header');
+        header.append(sky);
+ */
+
+ let world = document.querySelector('.header');
+world.style.backgroundSize = '100vw 300px'
+console.log('world')
+
+let word = document.querySelector('.weather');
+word.style.color = 'black';
+word.style.shadow = 'black';
+
+
+let grass = document.querySelector('.footer');
+grass.style.backgroundSize = '100vw 50vh' 
+    </script>
+</body>
+</html>
